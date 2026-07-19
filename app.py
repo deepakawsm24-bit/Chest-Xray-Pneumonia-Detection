@@ -70,7 +70,7 @@ def load_model():
 
 
     model.load_state_dict(
-        torch.load("/content/drive/MyDrive/chest_xray_Project/chest_xray_densenet121.pth", map_location = device))
+        torch.load("chest_xray_densenet121.pth", map_location = device))
     model.to(device)
     model.eval()
 
